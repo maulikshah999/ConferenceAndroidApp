@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/dmn_size_5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!--<TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dmn_size_5dp"
+            android:hint="Create Conference:"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/dmn_size_25dp"/>-->
+
+        <EditText
+            android:id="@+id/etTitleCreate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dmn_size_5dp"
+            android:hint="Title"
+            android:inputType="text" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dmn_size_5dp"
+            android:layout_marginTop="@dimen/dmn_size_5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dmn_size_5dp"
+                android:hint="Date:"
+                android:textSize="@dimen/dmn_size_20dp" />
+
+            <TextView
+                android:id="@+id/tvDateCreate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dmn_size_5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/dmn_size_20dp" />
+
+            <ImageView
+                android:id="@+id/ivDateCreate"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/icon_calender" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dmn_size_5dp"
+            android:layout_marginTop="@dimen/dmn_size_5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dmn_size_5dp"
+                android:text="Time:"
+                android:textSize="@dimen/dmn_size_20dp" />
+
+            <TextView
+                android:id="@+id/tvTimeCreate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dmn_size_5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/dmn_size_20dp" />
+
+            <ImageView
+                android:id="@+id/ivTimeCreate"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/icon_clock" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dmn_size_5dp"
+            android:layout_marginTop="@dimen/dmn_size_5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dmn_size_5dp"
+                android:hint="Location:"
+                android:textSize="@dimen/dmn_size_20dp" />
+
+            <TextView
+                android:id="@+id/tvLocationCreate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dmn_size_5dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textSize="@dimen/dmn_size_20dp" />
+
+            <ImageView
+                android:id="@+id/ivLocationCreate"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/icon_location_finder" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etGuestSpeakerCreate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dmn_size_5dp"
+            android:hint="Host"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/etConfDetailsCreate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dmn_size_5dp"
+            android:hint="Details"
+            android:maxLines="10"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/btnSubmitCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dmn_size_5dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:text="Submit"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/ivConfRawList"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dmn_size_5dp"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/dmn_size_5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvConfTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="title"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/dmn_size_18dp" />
+
+        <LinearLayout
+            android:id="@+id/llConfDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tvConfDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dmn_size_5dp"
+                android:layout_marginRight="@dimen/dmn_size_5dp"
+                android:layout_marginTop="@dimen/dmn_size_5dp"
+                android:text="25th Nov"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/tvConfTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dmn_size_5dp"
+                android:layout_marginRight="@dimen/dmn_size_5dp"
+                android:layout_marginTop="@dimen/dmn_size_5dp"
+                android:text="23:00 PM"
+                android:textColor="@android:color/black" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvConfLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llConfDate"
+            android:layout_marginTop="@dimen/dmn_size_5dp"
+            android:text="San Francisco"
+            android:maxLines="1"
+            android:textColor="@android:color/black" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ivJoin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:text="Join"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
