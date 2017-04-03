@@ -26,6 +26,8 @@ public class DatePickerFragment extends DialogFragment implements DatePickerDial
         month = c.get(Calendar.MONTH);
         day = c.get(Calendar.DAY_OF_MONTH);
 
+        // added line
+
         // Create a new instance of DatePickerDialog and return it
         return new DatePickerDialog(getActivity(), this, year, month, day);
     }
